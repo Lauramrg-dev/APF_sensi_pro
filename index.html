@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sensibiliser au handicap – Catalogue APF France handicap AURA</title>
+<style>
+  \:root{
+    --bleu:#003366; --bleu2:#0a4d8f; --bleu-clair:#e8f0fa;
+    --orange:#f26b21; --orange-clair:#fdeadd;
+    --vert:#3aa6a0; --jaune:#f4b942; --rose:#e05a7a;
+    --encre:#1c2b3a; --gris:#5b6b7b; --fond:#f7f9fc;
+  }
+  *{margin:0;padding:0;box-sizing\:border-box}
+  html{scroll-behavior\:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color\:var(--encre);background\:var(--fond);line-height:1.6}
+  /* ---------- barre de progression ---------- */
+  #barre{position\:fixed;top:0;left:0;height:5px;width:0;background\:linear-gradient(90deg,var(--orange),var(--jaune));z-index:1000;transition\:width .15s}
+  /* ---------- nav ---------- */
+  nav{position\:sticky;top:0;z-index:900;background\:var(--bleu);display\:flex;align-items\:center;gap:1rem;padding:.6rem 1.2rem;flex-wrap\:wrap;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .logo{display\:flex;align-items\:center;gap:.5rem;color:#fff;font-weight:800;letter-spacing:.5px}
+  .logo svg{background:#fff;border-radius:50%;padding:2px}
+  .logo small{display\:block;font-weight:400;font-size:.65rem;opacity:.85}
+  nav .liens{display\:flex;gap:.3rem;flex-wrap\:wrap;margin-left\:auto}
+  nav a{color:#fff;text-decoration\:none;font-size:.85rem;padding:.35rem .7rem;border-radius:20px;transition:.25s}
+  nav a\:hover,nav a.actif{background\:var(--orange)}
+  /* ---------- hero ---------- */
+  header{background\:linear-gradient(135deg,var(--bleu) 0%,var(--bleu2) 100%);color:#fff;text-align\:center;padding:4rem 1.5rem 4.5rem;position\:relative;overflow\:hidden}
+  header .ronds span{position\:absolute;border-radius:50%;background\:rgba(255,255,255,.06);animation\:flotte 7s ease-in-out infinite}
+  @keyframes flotte{0%,100%{transform\:translateY(0)}50%{transform:translateY(-22px)}}
+  h1{font-size\:clamp(1.9rem,5vw,3.2rem);text-transform\:uppercase;letter-spacing:2px}
+  header p{max-width:640px;margin:1rem auto 0;font-size:1.15rem;opacity:.95}
+  .badge-region{display\:inline-block;margin-top:1.6rem;background\:var(--orange);padding:.5rem 1.4rem;border-radius:30px;font-weight:700;box-shadow:0 
